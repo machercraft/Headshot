@@ -153,9 +153,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   agent: {fileID: 3446120057040012581}
-  space: 5
-  fallow: {fileID: 0}
-  player_name: Player
+  space: 2
+  fallow_min_dis: 15
+  player_tag: Player
+  destination: {x: 0, y: 0, z: 0}
 --- !u!114 &9065044855846305936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,7 +175,8 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 8602331628183678674}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0

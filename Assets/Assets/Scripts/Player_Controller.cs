@@ -28,8 +28,8 @@ public class Player_Controller : MonoBehaviourPun
     {
         if (Input.GetKey(KeyCode.W)){ player_body.AddForce(body.forward*force*Time.deltaTime); }
         if (Input.GetKey(KeyCode.S)){ player_body.AddForce(-body.forward*force*Time.deltaTime); }
-        if (Input.GetKey(KeyCode.A)){ player_body.AddForce(body.right*force*Time.deltaTime); }
-        if (Input.GetKey(KeyCode.D)){ player_body.AddForce(-body.right*force *Time.deltaTime); }
+        if (Input.GetKey(KeyCode.A)){ player_body.AddForce(-body.right*force*Time.deltaTime); }
+        if (Input.GetKey(KeyCode.D)){ player_body.AddForce(body.right*force *Time.deltaTime); }
         if (Input.GetKey(KeyCode.Space)&&on_ground){ player_body.AddForce(transform.up*jump_force*Time.deltaTime); }
     }
     public void Camera_Look()

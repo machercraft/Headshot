@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Network_Manneger
   version: 0.1
-  player_prefab: {fileID: 6859656947740619327, guid: 4125d39af7ee17f4089c8d283f801f71, type: 3}
+  player_prefab: {fileID: 6859656947740619327, guid: 10d9d737c4a9f18438cf63cf134f17a1, type: 3}
   spawn_points:
   - {fileID: 1769179821}
   - {fileID: 1366917126}
@@ -567,8 +567,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0da24f76b0622354da1d53dba2bbfa91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  player: {fileID: 0}
-  zombie_prefab: {fileID: 3347643232700370357, guid: 910ba42efbeab664195fe93594c232f8, type: 3}
+  player: {fileID: 6859656947740619327, guid: 10d9d737c4a9f18438cf63cf134f17a1, type: 3}
+  zombie_prefab: {fileID: 3347643232700370357, guid: 6b0b676522beb19449b706d94c6f2fc3, type: 3}
   zombies: []
   zombie_count: 10
   zombie_refill_count: 3

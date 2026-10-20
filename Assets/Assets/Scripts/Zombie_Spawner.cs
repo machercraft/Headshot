@@ -17,9 +17,6 @@ public class Zombie_Spawner : MonoBehaviourPun
 
     void Spawn()
     {
-        if (!PhotonNetwork.InRoom) return;
-        if (!PhotonNetwork.IsMasterClient) return;
-
         if (zombies.Count <= zombie_refill_count && (zombies.Count + zombie_refill_count) <= zombie_count)
         {
             zombies.Add(PhotonNetwork.Instantiate(zombie_prefab.name, transform.position, Quaternion.identity));
@@ -29,6 +26,8 @@ public class Zombie_Spawner : MonoBehaviourPun
     // Update is called once per frame
     void Update()
     {
+        if (!PhotonNetwork.InRoom) return;
+        if (!PhotonNetwork.IsMasterClient) return;
         Spawn();
     }
 }
